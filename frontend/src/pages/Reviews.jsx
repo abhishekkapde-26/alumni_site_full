@@ -1,0 +1,1 @@
+import React,{useEffect,useState} from 'react';import axios from 'axios';export default function Reviews(){const [reviews,setReviews]=useState([]);useEffect(()=>{axios.get(import.meta.env.VITE_API_BASE+'/api/alumni/reviews').then(r=>setReviews(r.data))},[]);return(<div><h3>Reviews</h3>{reviews.map(rv=>(<div key={rv.id}><strong>{rv.author}</strong>: {rv.text}</div>))}</div>)}

@@ -1,0 +1,1 @@
+import React from 'react';export default function Database(){return(<div><h3>Database</h3><p>This page describes the alumni dataset: uid, name, email, year_of_passing, sector, achievements, reminders, last_updated.</p></div>)}
